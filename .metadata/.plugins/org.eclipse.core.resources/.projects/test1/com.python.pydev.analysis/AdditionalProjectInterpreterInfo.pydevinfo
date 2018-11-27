@@ -1,0 +1,20 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\test1\com.python.pydev.analysis\v2_indexcache
+test1.testing1|1540706573634729000|C:\Users\ggabr\eclipse-workspace\test1\test1\testing1.py
+test1.__init__|1539218119053920000|C:\Users\ggabr\eclipse-workspace\test1\test1\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+2=test1.testing1
+1=C:\Users\ggabr\eclipse-workspace\test1\test1\testing1.py
+-- END DICTIONARY
+-- START TREE 1
+3
+l|1|l!1^1#1*19@
+x|1|x!1^2#1*19@
+y|1|y!1^3#1*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

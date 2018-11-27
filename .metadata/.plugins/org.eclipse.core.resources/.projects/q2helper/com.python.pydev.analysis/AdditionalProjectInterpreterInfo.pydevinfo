@@ -1,0 +1,37 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\q2helper\com.python.pydev.analysis\v2_indexcache
+retester|1539637881697023000|C:\Users\ggabr\eclipse-workspace\q2helper\retester.py
+q2solution|1539921844735154000|C:\Users\ggabr\eclipse-workspace\q2helper\q2solution.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+2=retester
+1=C:\Users\ggabr\eclipse-workspace\q2helper\retester.py
+3=C:\Users\ggabr\eclipse-workspace\q2helper\q2solution.py
+4=q2solution
+-- END DICTIONARY
+-- START TREE 1
+18
+act|1|action!1^89#13*19@
+bat|1|batch!1^63#5*18@
+com|1|commandPrompt!1^83#5*19@
+emb|1|embed!1^5#5*18@
+exp|1|expand_re!3^37#5*34@
+m|1|m!3^49#9*35@
+p|1|p!3^74#13*35@
+p1a|1|p1a!3^44#5*35@
+p1b|1|p1b!3^52#5*35@
+p2|1|p2!3^61#5*35@
+pag|1|pages!3^11#5*34@
+pat|1|pat!1^84#5*19@
+pd|1|pd!3^81#5*35@
+rep|1|repeat!1^55#5*18@
+rpl|1|rpl!1^86#5*19@
+tes|5|test_search!1^18#5*18@test_match!1^8#5*18@test_substitute!1^47#5*18@test_split!1^51#5*18@test_findall!1^28#5*18@
+tex|1|text!3^47#9*35@
+txt|1|txt!1^85#5*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

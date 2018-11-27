@@ -1,0 +1,28 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\remethods\com.python.pydev.analysis\v2_indexcache
+grep|1539637841586924000|C:\Users\ggabr\eclipse-workspace\remethods\grep.py
+readingtest|1539637841658973000|C:\Users\ggabr\eclipse-workspace\remethods\readingtest.py
+phonecall|1539637841647009000|C:\Users\ggabr\eclipse-workspace\remethods\phonecall.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+3=C:\Users\ggabr\eclipse-workspace\remethods\phonecall.py
+2=grep
+6=readingtest
+5=C:\Users\ggabr\eclipse-workspace\remethods\readingtest.py
+4=phonecall
+1=C:\Users\ggabr\eclipse-workspace\remethods\grep.py
+-- END DICTIONARY
+-- START TREE 1
+6
+fil|1|file!1^9#1*19@
+par|3|parse_phone_numbered!3^25#5*34@parse_phone_named!3^35#5*34@parse_test!3^48#1*35@
+pat|2|pattern!1^8#1*19@pattern_string!1^7#1*19@
+pho|1|phone!3^51#9*35@
+pla|1|place_call!3^4#5*34@
+rep|1|repl!5^4#5*50@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

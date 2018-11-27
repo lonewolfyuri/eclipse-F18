@@ -1,0 +1,24 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\retester\com.python.pydev.analysis\v2_indexcache
+retester|1539637784608100000|C:\Users\ggabr\eclipse-workspace\retester\retester.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+2=retester
+1=C:\Users\ggabr\eclipse-workspace\retester\retester.py
+-- END DICTIONARY
+-- START TREE 1
+8
+act|1|action!1^86#13*19@
+bat|1|batch!1^60#5*18@
+com|1|commandPrompt!1^80#5*19@
+pat|1|pat!1^81#5*19@
+rep|1|repeat!1^52#5*18@
+rpl|1|rpl!1^83#5*19@
+tes|5|test_search!1^15#5*18@test_match!1^5#5*18@test_substitute!1^44#5*18@test_split!1^48#5*18@test_findall!1^25#5*18@
+txt|1|txt!1^82#5*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

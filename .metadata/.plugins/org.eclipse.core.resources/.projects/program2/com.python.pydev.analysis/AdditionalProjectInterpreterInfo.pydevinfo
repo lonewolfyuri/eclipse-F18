@@ -1,0 +1,24 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\program2\com.python.pydev.analysis\v2_indexcache
+sparse_matrix|1540096019872922000|C:\Users\ggabr\eclipse-workspace\program2\sparse_matrix.py
+bag|1540096019800346000|C:\Users\ggabr\eclipse-workspace\program2\bag.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+4=sparse_matrix
+2=bag
+1=C:\Users\ggabr\eclipse-workspace\program2\bag.py
+3=C:\Users\ggabr\eclipse-workspace\program2\sparse_matrix.py
+-- END DICTIONARY
+-- START TREE 1
+5
+b|1|b!1^18#5*19@
+b2|1|b2!1^24#5*19@
+bag|1|Bag!1^5#7*17@
+m|1|m!3^17#5*35@
+spa|1|Sparse_Matrix!3^3#7*33@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

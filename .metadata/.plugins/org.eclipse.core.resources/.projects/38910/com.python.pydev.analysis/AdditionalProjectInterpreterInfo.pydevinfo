@@ -1,0 +1,27 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\38910\com.python.pydev.analysis\v2_indexcache
+exam|1540540697200744000|C:\Users\ggabr\eclipse-workspace\38910\exam.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=C:\Users\ggabr\eclipse-workspace\38910\exam.py
+2=exam
+-- END DICTIONARY
+-- START TREE 1
+11
+all|1|all_parties!1^12#5*18@
+ans|1|answer!1^107#9*19@
+che|1|check!1^86#9*18@
+db1|2|db1a!1^114#9*19@db1!1^105#9*19@
+db2|1|db2!1^129#9*19@
+ini|1|initiators!1^52#5*18@
+lol|1|lol!1^96#9*18@
+mat|1|matrix!1^64#5*18@
+mut|1|mutual_callers!1^42#5*18@
+rea|1|read_db!1^19#5*18@
+tal|1|talker_frequency!1^32#5*18@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,17 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\project0d\com.python.pydev.analysis\v2_indexcache
+facts|1538437533055679000|C:\Users\ggabr\eclipse-workspace\project0d\facts.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=C:\Users\ggabr\eclipse-workspace\project0d\facts.py
+2=facts
+-- END DICTIONARY
+-- START TREE 1
+1
+fac|2|fact1!1^4#5*18@fact2!1^7#5*18@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,42 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\exam solution\com.python.pydev.analysis\v2_indexcache
+exam|1540540537487294000|C:\Users\ggabr\eclipse-workspace\exam solution\exam.py
+goody|1540540537498086000|C:\Users\ggabr\eclipse-workspace\exam solution\goody.py
+prompt|1540540537498086000|C:\Users\ggabr\eclipse-workspace\exam solution\prompt.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+4=exam
+3=C:\Users\ggabr\eclipse-workspace\exam solution\exam.py
+6=goody
+1=C:\Users\ggabr\eclipse-workspace\exam solution\prompt.py
+5=C:\Users\ggabr\eclipse-workspace\exam solution\goody.py
+2=prompt
+-- END DICTIONARY
+-- START TREE 1
+20
+act|1|action!1^162#9*19@
+all|1|all_parties!3^10#5*34@
+ans|1|answer!3^104#9*35@
+che|1|check!3^83#9*34@
+com|1|command_prompt!1^160#5*19@
+db1|2|db1a!3^111#9*35@db1!3^102#9*35@
+db2|1|db2!3^126#9*35@
+for|9|for_int_between!1^83#5*18@for_string_via_index!1^134#5*18@for_string!1^96#5*18@for_bool!1^123#5*18@for_int!1^47#5*18@for_float!1^59#5*18@for_num!1^71#5*18@for_value!1^11#5*18@for_char!1^108#5*18@
+fra|1|frange!5^33#5*50@
+ini|1|initiators!3^51#5*34@
+ira|1|irange!5^17#5*50@
+lea|1|leading!5^60#5*50@
+lol|1|lol!3^93#9*34@
+mat|1|matrix!3^62#5*34@
+mut|1|mutual_callers!3^41#5*34@
+rea|2|read_file_values!5^98#5*50@read_db!3^22#5*34@
+saf|1|safe_open!5^71#5*50@
+tal|1|talker_frequency!3^31#5*34@
+typ|1|type_as_str!5^8#5*50@
+val|1|value!1^166#17*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

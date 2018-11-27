@@ -1,0 +1,31 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\leadingunderscores\com.python.pydev.analysis\v2_indexcache
+leadingunderscores|1539638183665169000|C:\Users\ggabr\eclipse-workspace\leadingunderscores\leadingunderscores.py
+-- END DISKCACHE
+-- START DICTIONARY
+8
+6=C3
+8=C1.__init__
+7=C2.__init__
+1=C:\Users\ggabr\eclipse-workspace\leadingunderscores\leadingunderscores.py
+2=leadingunderscores
+3=C3.__init__
+4=C1
+5=C2
+-- END DICTIONARY
+-- START TREE 1
+4
+C1|1|C1!1^2#7*17@
+C2|1|C2!1^20#7*17@
+C3|1|C3!1^40#7*17@
+c|1|c!1^10#1*19@
+-- END TREE
+-- START TREE 2
+5
+__a|1|__a!3&1^42#9*19@
+__i|3|__init__!4&1^3#9*18@__init__!5&1^21#9*18@__init__!6&1^41#9*18@
+_a|1|_a!7&1^22#9*19@
+a|1|a!8&1^4#9*19@
+bum|3|bump!4&1^6#9*18@bump!5&1^24#9*18@bump!6&1^44#9*18@
+-- END TREE

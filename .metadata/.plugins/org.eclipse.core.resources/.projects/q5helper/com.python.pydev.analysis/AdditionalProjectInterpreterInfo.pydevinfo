@@ -1,0 +1,22 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\q5helper\com.python.pydev.analysis\v2_indexcache
+q5solution|1541355929672167000|C:\Users\ggabr\eclipse-workspace\q5helper\q5solution.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=C:\Users\ggabr\eclipse-workspace\q5helper\q5solution.py
+2=q5solution
+-- END DICTIONARY
+-- START TREE 1
+6
+is_|1|is_sorted!1^7#5*18@
+l|1|l!1^54#5*19@
+mer|1|merge_chars!1^17#5*18@
+nes|1|nested_count!1^22#5*18@
+sep|1|separate!1^2#5*18@
+sor|1|sort!1^12#5*18@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

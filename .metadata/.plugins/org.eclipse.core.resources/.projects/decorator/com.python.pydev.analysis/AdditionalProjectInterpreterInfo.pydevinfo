@@ -1,0 +1,49 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\decorator\com.python.pydev.analysis\v2_indexcache
+illustrate_recursive|1541355901635926000|C:\Users\ggabr\eclipse-workspace\decorator\illustrate_recursive.py
+multiple|1541355901657388000|C:\Users\ggabr\eclipse-workspace\decorator\multiple.py
+memoize|1541355901646115000|C:\Users\ggabr\eclipse-workspace\decorator\memoize.py
+track_calls|1541355901671596000|C:\Users\ggabr\eclipse-workspace\decorator\track_calls.py
+-- END DISKCACHE
+-- START DICTIONARY
+17
+2=illustrate_recursive
+1=C:\Users\ggabr\eclipse-workspace\decorator\illustrate_recursive.py
+6=multiple
+15=Track_Calls.reset_calls
+7=C:\Users\ggabr\eclipse-workspace\decorator\memoize.py
+4=track_calls
+8=memoize
+16=Illustrate_Recursive.__init__
+5=C:\Users\ggabr\eclipse-workspace\decorator\multiple.py
+17=Illustrate_Recursive.illustrate
+14=Track_Calls.__init__
+9=Track_Calls
+10=Memoize
+3=C:\Users\ggabr\eclipse-workspace\decorator\track_calls.py
+11=Illustrate_Recursive
+13=Memoize.reset_cache
+12=Memoize.__init__
+-- END DICTIONARY
+-- START TREE 1
+5
+fac|1|factorial!1^40#9*18@
+fib|4|fib!3^29#9*34@fib!5^53#9*50@fib!1^51#9*18@fib!7^30#9*66@
+ill|1|Illustrate_Recursive!1^3#7*17@
+mem|2|Memoize!5^24#7*49@Memoize!7^3#7*65@
+tra|2|Track_Calls!5^3#7*49@Track_Calls!3^3#7*33@
+-- END TREE
+-- START TREE 2
+10
+__c|5|__call__!9&5^8#9*50@__call__!10&5^29#9*50@__call__!11&1^15#9*18@__call__!9&3^8#9*34@__call__!10&7^8#9*66@
+__g|5|__getattr__!9&5^18#9*50@__getattr__!10&5^41#9*50@__getattr__!9&3^18#9*34@__getattr__!11&1^29#9*18@__getattr__!10&7^19#9*66@
+__i|5|__init__!9&3^4#9*34@__init__!9&5^4#9*50@__init__!10&5^25#9*50@__init__!10&7^4#9*66@__init__!11&1^4#9*18@
+cac|4|cache!12&5^27#9*51@cache!13&5^39#9*51@cache!12&7^6#9*67@cache!13&7^17#9*67@
+cal|6|calls!14&3^6#9*35@calls!15&3^16#9*35@called!9&5^12#9*50@calls!14&5^6#9*51@calls!15&5^16#9*51@called!9&3^12#9*34@
+f|5|f!16&1^5#9*19@f!14&3^5#9*35@f!14&5^5#9*51@f!12&5^26#9*51@f!12&7^5#9*67@
+ill|1|illustrate!11&1^8#9*18@
+ind|1|indent!17&1^9#9*19@
+res|4|reset_cache!10&7^16#9*66@reset_cache!10&5^38#9*50@reset_calls!9&5^15#9*50@reset_calls!9&3^15#9*34@
+tra|2|trace!16&1^6#9*19@trace!17&1^10#9*19@
+-- END TREE

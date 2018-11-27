@@ -1,0 +1,33 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\linkedlist\com.python.pydev.analysis\v2_indexcache
+linkedlist|1541355975722293000|C:\Users\ggabr\eclipse-workspace\linkedlist\linkedlist.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+2=linkedlist
+4=LN.__init__
+3=LN
+1=C:\Users\ggabr\eclipse-workspace\linkedlist\linkedlist.py
+-- END DICTIONARY
+-- START TREE 1
+12
+LN|1|LN!1^1#7*17@
+add|1|add_after_ll!1^132#5*18@
+app|2|append_ll!1^115#5*18@append_ll_r!1^124#5*18@
+cop|2|copy_ll!1^90#5*18@copy_ll_r!1^100#5*18@
+fin|3|find_ll_r!1^74#5*18@find_ll!1^67#5*18@find_ll_r2!1^83#5*18@
+ite|1|iterator!1^106#5*18@
+len|2|len_ll!1^8#5*18@len_ll_r!1^15#5*18@
+lis|2|list_to_ll_r!1^60#5*18@list_to_ll!1^51#5*18@
+rem|1|remove_after_ll!1^136#5*18@
+str|2|str_ll!1^36#5*18@str_ll_r!1^43#5*18@
+sum|2|sum_ll_r!1^29#5*18@sum_ll!1^22#5*18@
+tes|1|test!1^148#5*19@
+-- END TREE
+-- START TREE 2
+3
+__i|1|__init__!3&1^2#9*18@
+nex|1|next!4&1^4#9*19@
+val|1|value!4&1^3#9*19@
+-- END TREE

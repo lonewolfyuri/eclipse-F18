@@ -1,0 +1,20 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\xref\com.python.pydev.analysis\v2_indexcache
+xref|1539367289641219000|C:\Users\ggabr\eclipse-workspace\xref\xref.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+2=xref
+1=C:\Users\ggabr\eclipse-workspace\xref\xref.py
+-- END DICTIONARY
+-- START TREE 1
+4
+fil|1|file!1^7#1*19@
+max|1|max_len!1^38#1*19@
+tex|1|text!1^21#5*19@
+xre|1|xref!1^11#1*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,13 @@
+def sum_dif(iterable):
+    answer = 0
+    i  = iter(iterable)
+    v2 = next(i)               # get first value (loop moves v2 to v1)
+    try:
+        while True:                    # next gets one new value in each loop
+            v1, v2 = v2, next(i)       # first time, v1 is 1st value, v2 is 2nd
+            answer += abs(v1-v2)
+    except StopIteration:
+        pass
+    return answer
+
+print(sum_dif(range(10000000)))

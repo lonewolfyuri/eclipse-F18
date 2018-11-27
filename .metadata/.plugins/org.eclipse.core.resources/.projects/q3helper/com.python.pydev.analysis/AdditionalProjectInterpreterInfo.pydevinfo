@@ -1,0 +1,57 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\q3helper\com.python.pydev.analysis\v2_indexcache
+private|1540636291014630000|C:\Users\ggabr\eclipse-workspace\q3helper\private.py
+extra|1540095901705589000|C:\Users\ggabr\eclipse-workspace\q3helper\extra.py
+point|1540602463738167000|C:\Users\ggabr\eclipse-workspace\q3helper\point.py
+-- END DISKCACHE
+-- START DICTIONARY
+11
+2=private
+8=C
+11=C.bad_add_more_attributes
+4=extra
+7=Point
+9=C.__init__
+3=C:\Users\ggabr\eclipse-workspace\q3helper\extra.py
+5=C:\Users\ggabr\eclipse-workspace\q3helper\point.py
+1=C:\Users\ggabr\eclipse-workspace\q3helper\private.py
+10=C.add_more_attributes
+6=point
+-- END DICTIONARY
+-- START TREE 1
+12
+C|1|C!1^5#7*17@
+__i|2|__init__!1^51#5*18@__init__!3^1#5*34@
+__s|1|__str__!3^16#5*34@
+add|1|add_more_attributes!3^5#5*34@
+bad|1|bad_add_more_attributes!3^8#5*34@
+bum|1|bump!3^11#5*34@
+ext|1|extra_bump!3^19#5*34@
+f|1|f!1^48#5*18@
+ori|1|origin!5^71#5*51@
+p1|1|p1!5^72#5*51@
+p2|1|p2!5^73#5*51@
+poi|1|Point!5^6#7*49@
+-- END TREE
+-- START TREE 2
+18
+__a|1|__add__!7&5^21#9*50@
+__b|1|__bool__!7&5^18#9*50@
+__c|1|__call__!7&5^57#9*50@
+__g|2|__getattr__!8&1^41#9*18@__getitem__!7&5^48#9*50@
+__i|2|__init__!8&1^6#9*18@__init__!7&5^7#9*50@
+__l|1|__lt__!7&5^36#9*50@
+__m|1|__mul__!7&5^26#9*50@
+__r|2|__repr__!7&5^12#9*50@__rmul__!7&5^31#9*50@
+__s|3|__setattr__!8&1^30#9*18@__str__!7&5^15#9*50@__str__!8&1^21#9*18@
+a|1|a!9&1^7#9*19@
+add|1|add_more_attributes!8&1^10#9*18@
+b|1|b!9&1^8#9*19@
+bad|1|bad_add_more_attributes!8&1^13#9*18@
+bum|1|bump!8&1^16#9*18@
+c|1|c!10&1^11#9*19@
+dis|1|distance!7&5^62#9*50@
+in_|1|in_C!8&1^25#9*18@
+pri|1|private_d!11&1^14#9*19@
+-- END TREE

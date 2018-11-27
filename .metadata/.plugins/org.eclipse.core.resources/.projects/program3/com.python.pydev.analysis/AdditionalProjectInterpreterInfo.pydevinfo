@@ -1,0 +1,49 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\program3\com.python.pydev.analysis\v2_indexcache
+ICStunes|1541731265681835000|C:\Users\ggabr\eclipse-workspace\program3\ICStunes.py
+kargsexample|1541731280103129000|C:\Users\ggabr\eclipse-workspace\program3\kargsexample.py
+miniexample|1541732251352810000|C:\Users\ggabr\eclipse-workspace\program3\miniexample.py
+restaurant|1541731329945028000|C:\Users\ggabr\eclipse-workspace\program3\restaurant.py
+pcollections|1541909117099185000|C:\Users\ggabr\eclipse-workspace\program3\pcollections.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+9=C:\Users\ggabr\eclipse-workspace\program3\pcollections.py
+4=ICStunes
+8=kargsexample
+1=C:\Users\ggabr\eclipse-workspace\program3\restaurant.py
+3=C:\Users\ggabr\eclipse-workspace\program3\ICStunes.py
+6=miniexample
+2=restaurant
+7=C:\Users\ggabr\eclipse-workspace\program3\kargsexample.py
+10=pcollections
+5=C:\Users\ggabr\eclipse-workspace\program3\miniexample.py
+-- END DICTIONARY
+-- START TREE 1
+21
+__a|1|__author__!1^3#1*19@
+alb|4|Album!3^15#1*35@Album_id!3^127#5*34@Album_length!3^114#5*34@Album_to_Songdisplays!3^233#5*34@
+all|2|all_Songdisplays!3^225#5*34@all_songs!3^170#5*34@
+col|6|collection_sort!3^140#5*34@Collection_search_by_name!1^99#5*18@Collection_new!1^86#5*18@Collection_str!1^91#5*18@Collection_add!1^110#5*18@Collection_remove_by_name!1^116#5*18@
+dec|1|decorate_it!5^49#1*51@
+f|2|f!5^51#1*51@f!7^6#5*66@
+fil|1|filter_letters!5^48#1*51@
+han|1|handle_commands!1^29#5*18@
+inv|1|invalid_command!1^51#5*18@
+mak|1|make_keep!5^7#5*50@
+men|1|MENU!1^27#1*19@
+mus|1|MUSIC!3^77#1*35@
+p1|1|p1!9^149#5*83@
+pla|1|play_count_from_songdisplay!3^242#5*34@
+pna|1|pnamedtuple!9^5#5*82@
+poi|1|point!9^148#5*83@
+res|4|Restaurant!1^61#1*19@restaurants!1^12#5*18@Restaurant_str!1^64#5*18@Restaurant_get_info!1^72#5*18@
+son|4|Song!3^19#1*35@Songdisplay!3^219#1*35@Song_play_count!3^165#5*34@Songlist!3^178#1*35@
+tes|1|test_list!3^254#1*35@
+top|2|top_n_played!3^247#5*34@top_n_played_songs!3^183#5*34@
+wor|1|word!5^53#1*51@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

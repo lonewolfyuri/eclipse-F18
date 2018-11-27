@@ -1,0 +1,73 @@
+# Submitter: ggabrich(Gabricht, George)
+
+import re, traceback, keyword
+
+def pnamedtuple(type_name, field_names, mutable= False):
+    def show_listing(s):
+        for line_num, line_text in enumerate(s.split('\n'), 1):
+            print(f' {line_num: >3} {line_text.rstrip()}')
+
+    # put your code here
+    # bind class_definition (used below) to the string constructed for the class
+    def unique(iterable):
+        iterated = set()
+        for i in iterable:
+            if i not in iterated:
+                iterated.add(i)
+                yield i
+    
+    reg = re.compile('[a-zA-Z][a-zA-Z0-9_]*')
+    if not reg.match(str(type_name)): raise SyntaxError(f'{__name__}.pnamedtuple: please enter a valid type_name instead of {type_name}.')
+    elif type_name in keyword.kwlist: raise SyntaxError(f'{__name__}.pnamedtuple: entered type_name {type_name} is a Python keyword.')
+    
+    _fields = []
+    
+    if type(field_names) is not list: 
+        if type(field_names) is not str: raise SyntaxError(f'{__name__}.pnamedtuple: please enter fields in str or list')
+        else: _fields += [item for item in print(unique(re.split(',? *',field_names)))][1:]
+    else: _fields += [item for item in unique(field_names)]
+    
+    print(_fields)
+    
+    for item in _fields:
+        if not reg.match(item): raise SyntaxError(f'{__name__}.pnamedtuple: please enter a valid field name instead of {item}.')
+        elif item in keyword.kwlist: raise SyntaxError(f'{__name__}.pnamedtuple: entered field name {item} is a Python keyword.')
+    
+    class_definition = f'''\
+class {type_name}:
+    def __init__(self, {', '.join(_fields)}):
+        for val in ({', '.join(_fields)}): 
+            self.__dict__[val] = val
+        self._fields = {list(_fields)}
+        self._mutable = {mutable}
+        
+'''
+    
+    # While debugging, remove comment below showing source code for the class
+    # show_listing(class_definition)
+    
+    # Execute this class_definition str in a local name space; then, bind the
+    #   source_code attribute to class_defintion; after that try, return the
+    #   class object created; if there is a syntax error, list the class and
+    #   also show the error
+    name_space = dict(__name__  =  f'pnamedtuple_{type_name}')
+    try:
+        exec(class_definition,name_space)
+        name_space[type_name].source_code = class_definition
+    except (TypeError,SyntaxError):   
+        show_listing(class_definition)
+        traceback.print_exc()
+    return name_space[type_name]
+
+
+    
+if __name__ == '__main__':
+    # Test pnamedtuple in script below: use Point = pnamedtuple('Point','x,y')
+    point = pnamedtuple('Point', 'x y')
+    #driver tests
+    import driver
+    driver.default_file_name = 'bscp3S18.txt'
+#     driver.default_show_exception= True
+#     driver.default_show_exception_message= True
+#     driver.default_show_traceback= True
+    driver.driver()

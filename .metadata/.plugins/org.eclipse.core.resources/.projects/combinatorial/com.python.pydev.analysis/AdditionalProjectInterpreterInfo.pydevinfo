@@ -1,0 +1,21 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\combinatorial\com.python.pydev.analysis\v2_indexcache
+combinatorial|1541355839351225000|C:\Users\ggabr\eclipse-workspace\combinatorial\combinatorial.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=C:\Users\ggabr\eclipse-workspace\combinatorial\combinatorial.py
+2=combinatorial
+-- END DICTIONARY
+-- START TREE 1
+5
+dic|1|dice!1^12#1*19@
+how|1|how_frequent!1^5#5*18@
+is_|1|is_straight_flush!1^45#5*18@
+sui|1|suits!1^23#1*19@
+val|1|values!1^24#1*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

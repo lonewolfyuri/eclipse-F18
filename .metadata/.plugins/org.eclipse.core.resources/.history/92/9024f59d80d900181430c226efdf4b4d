@@ -1,0 +1,63 @@
+# Submitter: Ggabrich(Gabricht, George)
+
+import prompt,re
+import math
+from goody import type_as_str
+
+class Point:
+    def __init__(self, x:int, y:int, z:int) -> None:
+        assert type(x) == int and type(y) == int and type(z) == int, f'{type_as_str(self)}.__init__: requires 3 int values as arguments.'
+        self.x, self.y, self.z = x, y, z
+        self.coords = (self.x, self.y, self.z)
+    
+    
+    def __repr__(self) -> str: return f'Point({self.x},{self.y},{self.z})'
+    
+    
+    def __str__(self) -> str: return f'(x={self.x},y={self.y},z={self.z})'
+    
+    
+    def __bool__(self) -> bool: return not all(v==0 for v in self.coords)
+    
+    
+    def __add__(self, right: Point) -> Point:
+        if type(right) is Point: return Point(self.x+right.x, self.y+right.y, self.z+right.z)
+        else: raise TypeError(f'{type_as_str(Point)}.__add__: cannot add Point type and {type_as_str(right)} type')
+    
+    
+    def __mul__(self, right: int) -> Point:
+        if type(right) is int: return Point(self.x*right, self.y*right, self.z*right)
+        else: raise TypeError(f'{type_as_str(Point)}.__mul__: cannot multiply Point type and {type_as_str(right)} type')
+    
+    
+    def __rmul__(self, left: int) -> Point:
+        if type(left) is int: return Point(self.x*left, self.y*left, self.z*left)
+        else: raise TypeError(f'{type_as_str(Point)}.__rmul__: cannot multiply Point type and {type_as_str(left)} type')
+    
+    
+    def __lt__(self, right) -> bool:
+        if type(right) in (int,float): return (self.distance(Point(0,0,0)) < right)
+        elif type(right) is Point: return (self.distance(Point(0,0,0)) < right.distance(Point(0,0,0)))
+        else: raise TypeError(f'{type_as_str(Point)}.__lt__: cannot compare Point type and {type_as_str(right)} type')
+    
+    
+    def distance(self, other: Point) -> float:
+        if type(other) is Point: return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2 + (self.z - other.z)**2)
+        else: raise TypeError(f'{type_as_str(Point)}.distance: cannot find distance between Point type and {type_as_str(other)} type')
+    
+    
+
+if __name__ == '__main__':
+    #Simple tests before running driver
+    #Put your own test code here to test Point before doing bsc tests
+
+    print('Start simple testing')
+    
+    print()
+    import driver
+    
+    driver.default_file_name = 'bscq31F18.txt'
+#     driver.default_show_traceback = True
+#     driver.default_show_exception = True
+#     driver.default_show_exception_message = True
+    driver.driver()

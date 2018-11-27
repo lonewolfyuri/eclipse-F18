@@ -1,0 +1,27 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\q1helper\com.python.pydev.analysis\v2_indexcache
+q1solution|1539321874366175000|C:\Users\ggabr\eclipse-workspace\q1helper\q1solution.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+2=q1solution
+1=C:\Users\ggabr\eclipse-workspace\q1helper\q1solution.py
+-- END DICTIONARY
+-- START TREE 1
+11
+db1|1|db1!1^111#5*19@
+db2|1|db2!1^117#5*19@
+f|1|f!1^74#5*19@
+fir|1|first_quad!1^40#5*18@
+int|1|integrate!1^5#5*18@
+mov|1|movie_rank!1^45#5*18@
+poi|1|points!1^35#5*18@
+ps1|1|ps1!1^81#5*19@
+ps2|1|ps2!1^82#5*19@
+rev|1|reviewer_dict!1^55#5*18@
+sor|3|sorted3!1^30#5*18@sorted1!1^20#5*18@sorted2!1^25#5*18@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,45 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\ggabr\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\program1\com.python.pydev.analysis\v2_indexcache
+ndfa|1539562470615641000|C:\Users\ggabr\eclipse-workspace\program1\ndfa.py
+stable|1539562522612454000|C:\Users\ggabr\eclipse-workspace\program1\stable.py
+wordgenerator|1539562449474754000|C:\Users\ggabr\eclipse-workspace\program1\wordgenerator.py
+fa|1539529864927849000|C:\Users\ggabr\eclipse-workspace\program1\fa.py
+reachable|1539637619235670000|C:\Users\ggabr\eclipse-workspace\program1\reachable.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+3=C:\Users\ggabr\eclipse-workspace\program1\stable.py
+9=C:\Users\ggabr\eclipse-workspace\program1\ndfa.py
+10=ndfa
+4=stable
+1=C:\Users\ggabr\eclipse-workspace\program1\wordgenerator.py
+2=wordgenerator
+6=fa
+7=C:\Users\ggabr\eclipse-workspace\program1\reachable.py
+5=C:\Users\ggabr\eclipse-workspace\program1\fa.py
+8=reachable
+-- END DICTIONARY
+-- START TREE 1
+17
+cor|2|corpus_as_str!1^26#5*18@corpus!1^45#5*19@
+dic|1|dict_as_str!3^27#5*34@
+ext|1|extract_matches!3^38#5*34@
+fa_|3|fa_inputs!5^53#5*51@fa_dict!5^51#5*51@fa_as_str!5^21#5*50@
+gra|2|graph!7^34#5*67@graph_as_str!7^15#5*66@
+int|2|interpret!9^44#5*82@interpret!5^39#5*50@
+mak|1|make_match!3^42#5*34@
+mat|1|match!3^13#1*35@
+men|1|men!3^72#5*35@
+ndf|3|ndfa_inputs!9^61#5*83@ndfa_dict!9^59#5*83@ndfa_as_str!9^23#5*82@
+pre|1|prefs!3^14#1*35@
+pro|3|process!5^28#5*50@produce_text!1^34#5*18@process!9^31#5*82@
+rea|9|reached_nodes!7^43#9*67@read_match_preferences!3^17#5*34@read_fa!5^6#5*50@read_graph!7^8#5*66@read_inputs!9^16#5*82@read_corpus!1^15#5*18@reachable!7^21#5*66@read_inputs!5^14#5*50@read_ndfa!9^7#5*82@
+sta|1|start!7^37#9*67@
+who|1|who_prefer!3^34#5*34@
+wom|1|women!3^73#5*35@
+wor|1|word_at_a_time!1^9#5*18@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE
