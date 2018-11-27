@@ -1,0 +1,10 @@
+Alan:Barb:10:20
+Alan:Carl:10:10
+Barb:Alan:10:10
+Barb:Deja:5:5:5
+Carl:Alan:10
+Carl:Alan:5
+Carl:Deja:15
+Carl:Elan:5:5
+Deja:Elan:5
+Elan:Carl:10

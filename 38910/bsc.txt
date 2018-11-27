@@ -1,0 +1,54 @@
+# Setup
+c-->from imp import reload
+c-->import exam
+c-->reload(exam)
+c-->from exam import all_parties,read_db,talker_frequency,mutual_callers,initiators,matrix
+#
+
+# Test 1: parties
+c-->db1 = {'Alan': {'Babs': [10, 20], 'Carl': [10, 10]}, 'Babs': {'Alan': [10, 10], 'Deja': [5, 5, 5]}, 'Carl': {'Alan': [10, 5], 'Deja': [15], 'Elan': [5, 5]}, 'Deja': {'Elan': [5]}, 'Elan': {'Carl': [10]}}
+==-->all_parties(db1)-->{'Elan', 'Deja', 'Alan', 'Babs', 'Carl'}
+c-->db1a = {'Alan': {'Babs': [10, 20], 'Carl': [10, 10]}, 'Babs': {'Alan': [10, 10], 'Deja': [5, 5, 5]},'Carl': {'Alan': [10, 5],  'Deja': [15],       'Elan': [5, 5]}}
+==-->all_parties(db1a)-->{'Elan', 'Deja', 'Alan', 'Babs', 'Carl'}
+c-->db2 = {'Gary': {'Babs': [1], 'Carl': [19, 12, 2], 'Hope': [8], 'Alan': [25, 26]}, 'Carl': {'Hope': [10], 'Gary': [11, 8], 'Deja': [12], 'Alan': [15, 11, 4], 'Babs': [34]}, 'Elan': {'Fern': [16], 'Deja': [6, 27], 'Carl': [3], 'Hope': [29]}, 'Babs': {'Gary': [14], 'Alan': [14], 'Fern': [4]}, 'Deja': {'Gary': [30, 26], 'Babs': [25, 3], 'Fern': [10, 3, 27], 'Hope': [4], 'Elan': [5]}, 'Alan': {'Babs': [3, 15], 'Hope': [2, 46], 'Gary': [36]}, 'Fern': {'Alan': [7], 'Carl': [37, 46, 43], 'Elan': [5], 'Gary': [7]}, 'Hope': {'Elan': [15], 'Fern': [9, 2, 36], 'Alan': [6, 16], 'Babs': [29]}}
+==-->all_parties(db2)-->{'Gary', 'Carl', 'Elan', 'Fern', 'Alan', 'Hope', 'Deja', 'Babs'}
+c-->db3 = {'Babs': {'Gary': [3, 4, 1], 'Fern': [5, 9], 'Carl': [2], 'Hope': [6], 'Deja': [7]}, 'Carl': {'Fern': [2, 11], 'Gary': [2], 'Alan': [6, 2, 3]}, 'Deja': {'Gary': [10], 'Elan': [6], 'Fern': [5, 4], 'Babs': [1], 'Carl': [6, 8]}, 'Elan': {'Hope': [0], 'Gary': [7]}, 'Hope': {'Babs': [11, 1, 1], 'Deja': [5, 5], 'Gary': [8], 'Elan': [0], 'Fern': [11, 12]}, 'Gary': {'Fern': [2], 'Carl': [4, 3], 'Babs': [3, 14]}, 'Alan': {'Carl': [4, 4, 3], 'Hope': [6, 5, 7], 'Gary': [3, 7]}, 'Fern': {'Hope': [0], 'Elan': [0, 5], 'Carl': [11, 5]}}
+==-->all_parties(db3)-->{'Gary', 'Carl', 'Elan', 'Fern', 'Alan', 'Hope', 'Deja', 'Babs'}
+
+# Test 1: read_db
+c-->db1 = {'Alan': {'Babs': [10, 20], 'Carl': [10, 10]}, 'Babs': {'Alan': [10, 10], 'Deja': [5, 5, 5]}, 'Carl': {'Alan': [10, 5], 'Deja': [15], 'Elan': [5, 5]}, 'Deja': {'Elan': [5]}, 'Elan': {'Carl': [10]}}
+==-->read_db(open('db1.txt'))-->{'Alan': {'Babs': [10, 20], 'Carl': [10, 10]}, 'Babs': {'Alan': [10, 10], 'Deja': [5, 5, 5]}, 'Carl': {'Alan': [10, 5], 'Deja': [15], 'Elan': [5, 5]}, 'Deja': {'Elan': [5]}, 'Elan': {'Carl': [10]}}
+==-->read_db(open('db2.txt'))-->{'Gary': {'Babs': [1], 'Carl': [19, 12, 2], 'Hope': [8], 'Alan': [25, 26]}, 'Carl': {'Hope': [10], 'Gary': [11, 8], 'Deja': [12], 'Alan': [15, 11, 4], 'Babs': [34]}, 'Elan': {'Fern': [16], 'Deja': [6, 27], 'Carl': [3], 'Hope': [29]}, 'Babs': {'Gary': [14], 'Alan': [14], 'Fern': [4]}, 'Deja': {'Gary': [30, 26], 'Babs': [25, 3], 'Fern': [10, 3, 27], 'Hope': [4], 'Elan': [5]}, 'Alan': {'Babs': [3, 15], 'Hope': [2, 46], 'Gary': [36]}, 'Fern': {'Alan': [7], 'Carl': [37, 46, 43], 'Elan': [5], 'Gary': [7]}, 'Hope': {'Elan': [15], 'Fern': [9, 2, 36], 'Alan': [6, 16], 'Babs': [29]}}
+==-->read_db(open('db3.txt'))-->{'Babs': {'Gary': [3, 4, 1], 'Fern': [5, 9], 'Carl': [2], 'Hope': [6], 'Deja': [7]}, 'Carl': {'Fern': [2, 11], 'Gary': [2], 'Alan': [6, 2, 3]}, 'Deja': {'Gary': [10], 'Elan': [6], 'Fern': [5, 4], 'Babs': [1], 'Carl': [6, 8]}, 'Elan': {'Hope': [0], 'Gary': [7]}, 'Hope': {'Babs': [11, 1, 1], 'Deja': [5, 5], 'Gary': [8], 'Elan': [0], 'Fern': [11, 12]}, 'Gary': {'Fern': [2], 'Carl': [4, 3], 'Babs': [3, 14]}, 'Alan': {'Carl': [4, 4, 3], 'Hope': [6, 5, 7], 'Gary': [3, 7]}, 'Fern': {'Hope': [0], 'Elan': [0, 5], 'Carl': [11, 5]}}
+
+# Test 3: talker_frequency
+c-->db1 = {'Alan': {'Babs': [10, 20], 'Carl': [10, 10]}, 'Babs': {'Alan': [10, 10], 'Deja': [5, 5, 5]}, 'Carl': {'Alan': [10, 5], 'Deja': [15], 'Elan': [5, 5]}, 'Deja': {'Elan': [5]}, 'Elan': {'Carl': [10]}}
+==-->talker_frequency(db1)-->[('Alan', 8), ('Carl', 8), ('Babs', 7), ('Deja', 5), ('Elan', 4)]
+c-->db2 = {'Gary': {'Babs': [1], 'Carl': [19, 12, 2], 'Hope': [8], 'Alan': [25, 26]}, 'Carl': {'Hope': [10], 'Gary': [11, 8], 'Deja': [12], 'Alan': [15, 11, 4], 'Babs': [34]}, 'Elan': {'Fern': [16], 'Deja': [6, 27], 'Carl': [3], 'Hope': [29]}, 'Babs': {'Gary': [14], 'Alan': [14], 'Fern': [4]}, 'Deja': {'Gary': [30, 26], 'Babs': [25, 3], 'Fern': [10, 3, 27], 'Hope': [4], 'Elan': [5]}, 'Alan': {'Babs': [3, 15], 'Hope': [2, 46], 'Gary': [36]}, 'Fern': {'Alan': [7], 'Carl': [37, 46, 43], 'Elan': [5], 'Gary': [7]}, 'Hope': {'Elan': [15], 'Fern': [9, 2, 36], 'Alan': [6, 16], 'Babs': [29]}}
+==-->talker_frequency(db2)-->[('Carl', 15), ('Alan', 14), ('Fern', 14), ('Gary', 14), ('Hope', 13), ('Deja', 12), ('Babs', 10), ('Elan', 8)]
+c-->db3 = {'Babs': {'Gary': [3, 4, 1], 'Fern': [5, 9], 'Carl': [2], 'Hope': [6], 'Deja': [7]}, 'Carl': {'Fern': [2, 11], 'Gary': [2], 'Alan': [6, 2, 3]}, 'Deja': {'Gary': [10], 'Elan': [6], 'Fern': [5, 4], 'Babs': [1], 'Carl': [6, 8]}, 'Elan': {'Hope': [0], 'Gary': [7]}, 'Hope': {'Babs': [11, 1, 1], 'Deja': [5, 5], 'Gary': [8], 'Elan': [0], 'Fern': [11, 12]}, 'Gary': {'Fern': [2], 'Carl': [4, 3], 'Babs': [3, 14]}, 'Alan': {'Carl': [4, 4, 3], 'Hope': [6, 5, 7], 'Gary': [3, 7]}, 'Fern': {'Hope': [0], 'Elan': [0, 5], 'Carl': [11, 5]}}
+==-->talker_frequency(db3)-->[('Carl', 16), ('Hope', 15), ('Babs', 14), ('Fern', 14), ('Gary', 14), ('Alan', 11), ('Deja', 10), ('Elan', 6)]
+
+# Test 4: mutual_callers
+c-->db1 = {'Alan': {'Babs': [10, 20], 'Carl': [10, 10]}, 'Babs': {'Alan': [10, 10], 'Deja': [5, 5, 5]}, 'Carl': {'Alan': [10, 5], 'Deja': [15], 'Elan': [5, 5]}, 'Deja': {'Elan': [5]}, 'Elan': {'Carl': [10]}}
+==-->mutual_callers(db1)-->{('Alan', 'Carl'), ('Carl', 'Elan'), ('Alan', 'Babs')}
+c-->db2 = {'Gary': {'Babs': [1], 'Carl': [19, 12, 2], 'Hope': [8], 'Alan': [25, 26]}, 'Carl': {'Hope': [10], 'Gary': [11, 8], 'Deja': [12], 'Alan': [15, 11, 4], 'Babs': [34]}, 'Elan': {'Fern': [16], 'Deja': [6, 27], 'Carl': [3], 'Hope': [29]}, 'Babs': {'Gary': [14], 'Alan': [14], 'Fern': [4]}, 'Deja': {'Gary': [30, 26], 'Babs': [25, 3], 'Fern': [10, 3, 27], 'Hope': [4], 'Elan': [5]}, 'Alan': {'Babs': [3, 15], 'Hope': [2, 46], 'Gary': [36]}, 'Fern': {'Alan': [7], 'Carl': [37, 46, 43], 'Elan': [5], 'Gary': [7]}, 'Hope': {'Elan': [15], 'Fern': [9, 2, 36], 'Alan': [6, 16], 'Babs': [29]}}
+==-->mutual_callers(db2)-->{('Carl', 'Gary'), ('Alan', 'Babs'), ('Alan', 'Hope'), ('Alan', 'Gary'), ('Babs', 'Gary'), ('Elan', 'Fern'), ('Deja', 'Elan'), ('Elan', 'Hope')}
+c-->db3 = {'Babs': {'Gary': [3, 4, 1], 'Fern': [5, 9], 'Carl': [2], 'Hope': [6], 'Deja': [7]}, 'Carl': {'Fern': [2, 11], 'Gary': [2], 'Alan': [6, 2, 3]}, 'Deja': {'Gary': [10], 'Elan': [6], 'Fern': [5, 4], 'Babs': [1], 'Carl': [6, 8]}, 'Elan': {'Hope': [0], 'Gary': [7]}, 'Hope': {'Babs': [11, 1, 1], 'Deja': [5, 5], 'Gary': [8], 'Elan': [0], 'Fern': [11, 12]}, 'Gary': {'Fern': [2], 'Carl': [4, 3], 'Babs': [3, 14]}, 'Alan': {'Carl': [4, 4, 3], 'Hope': [6, 5, 7], 'Gary': [3, 7]}, 'Fern': {'Hope': [0], 'Elan': [0, 5], 'Carl': [11, 5]}}
+==-->mutual_callers(db3)-->{('Fern', 'Hope'), ('Carl', 'Gary'), ('Carl', 'Fern'), ('Babs', 'Hope'), ('Babs', 'Gary'), ('Babs', 'Deja'), ('Alan', 'Carl'), ('Elan', 'Hope')}
+
+# Test 5: initiators
+c-->db1 = {'Alan': {'Babs': [10, 20], 'Carl': [10, 10]}, 'Babs': {'Alan': [10, 10], 'Deja': [5, 5, 5]}, 'Carl': {'Alan': [10, 5], 'Deja': [15], 'Elan': [5, 5]}, 'Deja': {'Elan': [5]}, 'Elan': {'Carl': [10]}}
+==-->initiators(db1)-->['Babs', 'Carl', 'Alan', 'Elan', 'Deja']
+c-->db2 = {'Gary': {'Babs': [1], 'Carl': [19, 12, 2], 'Hope': [8], 'Alan': [25, 26]}, 'Carl': {'Hope': [10], 'Gary': [11, 8], 'Deja': [12], 'Alan': [15, 11, 4], 'Babs': [34]}, 'Elan': {'Fern': [16], 'Deja': [6, 27], 'Carl': [3], 'Hope': [29]}, 'Babs': {'Gary': [14], 'Alan': [14], 'Fern': [4]}, 'Deja': {'Gary': [30, 26], 'Babs': [25, 3], 'Fern': [10, 3, 27], 'Hope': [4], 'Elan': [5]}, 'Alan': {'Babs': [3, 15], 'Hope': [2, 46], 'Gary': [36]}, 'Fern': {'Alan': [7], 'Carl': [37, 46, 43], 'Elan': [5], 'Gary': [7]}, 'Hope': {'Elan': [15], 'Fern': [9, 2, 36], 'Alan': [6, 16], 'Babs': [29]}}
+==-->initiators(db2)-->['Deja', 'Carl', 'Hope', 'Gary', 'Fern', 'Elan', 'Alan', 'Babs']
+c-->db3 = {'Babs': {'Gary': [3, 4, 1], 'Fern': [5, 9], 'Carl': [2], 'Hope': [6], 'Deja': [7]}, 'Carl': {'Fern': [2, 11], 'Gary': [2], 'Alan': [6, 2, 3]}, 'Deja': {'Gary': [10], 'Elan': [6], 'Fern': [5, 4], 'Babs': [1], 'Carl': [6, 8]}, 'Elan': {'Hope': [0], 'Gary': [7]}, 'Hope': {'Babs': [11, 1, 1], 'Deja': [5, 5], 'Gary': [8], 'Elan': [0], 'Fern': [11, 12]}, 'Gary': {'Fern': [2], 'Carl': [4, 3], 'Babs': [3, 14]}, 'Alan': {'Carl': [4, 4, 3], 'Hope': [6, 5, 7], 'Gary': [3, 7]}, 'Fern': {'Hope': [0], 'Elan': [0, 5], 'Carl': [11, 5]}}
+==-->initiators(db3)-->['Hope', 'Alan', 'Babs', 'Deja', 'Carl', 'Fern', 'Gary', 'Elan']
+
+# Test 6 (extra credit): matrix
+c-->db1 = {'Alan': {'Babs': [10, 20], 'Carl': [10, 10]}, 'Babs': {'Alan': [10, 10], 'Deja': [5, 5, 5]}, 'Carl': {'Alan': [10, 5], 'Deja': [15], 'Elan': [5, 5]}, 'Deja': {'Elan': [5]}, 'Elan': {'Carl': [10]}}
+==-->matrix(db1)-->[[0, 50, 35, 0, 0], [50, 0, 0, 15, 0], [35, 0, 0, 15, 20], [0, 15, 15, 0, 5], [0, 0, 20, 5, 0]]
+c-->db2 = {'Gary': {'Babs': [1], 'Carl': [19, 12, 2], 'Hope': [8], 'Alan': [25, 26]}, 'Carl': {'Hope': [10], 'Gary': [11, 8], 'Deja': [12], 'Alan': [15, 11, 4], 'Babs': [34]}, 'Elan': {'Fern': [16], 'Deja': [6, 27], 'Carl': [3], 'Hope': [29]}, 'Babs': {'Gary': [14], 'Alan': [14], 'Fern': [4]}, 'Deja': {'Gary': [30, 26], 'Babs': [25, 3], 'Fern': [10, 3, 27], 'Hope': [4], 'Elan': [5]}, 'Alan': {'Babs': [3, 15], 'Hope': [2, 46], 'Gary': [36]}, 'Fern': {'Alan': [7], 'Carl': [37, 46, 43], 'Elan': [5], 'Gary': [7]}, 'Hope': {'Elan': [15], 'Fern': [9, 2, 36], 'Alan': [6, 16], 'Babs': [29]}}
+==-->matrix(db2)-->[[0, 32, 30, 0, 0, 7, 87, 70], [32, 0, 34, 28, 0, 4, 15, 29], [30, 34, 0, 12, 3, 126, 52, 10], [0, 28, 12, 0, 38, 40, 56, 4], [0, 0, 3, 38, 0, 21, 0, 44], [7, 4, 126, 40, 21, 0, 7, 47], [87, 15, 52, 56, 0, 7, 0, 8], [70, 29, 10, 4, 44, 47, 8, 0]]
+c-->db3 = {'Babs': {'Gary': [3, 4, 1], 'Fern': [5, 9], 'Carl': [2], 'Hope': [6], 'Deja': [7]}, 'Carl': {'Fern': [2, 11], 'Gary': [2], 'Alan': [6, 2, 3]}, 'Deja': {'Gary': [10], 'Elan': [6], 'Fern': [5, 4], 'Babs': [1], 'Carl': [6, 8]}, 'Elan': {'Hope': [0], 'Gary': [7]}, 'Hope': {'Babs': [11, 1, 1], 'Deja': [5, 5], 'Gary': [8], 'Elan': [0], 'Fern': [11, 12]}, 'Gary': {'Fern': [2], 'Carl': [4, 3], 'Babs': [3, 14]}, 'Alan': {'Carl': [4, 4, 3], 'Hope': [6, 5, 7], 'Gary': [3, 7]}, 'Fern': {'Hope': [0], 'Elan': [0, 5], 'Carl': [11, 5]}}
+==-->matrix(db3)-->[[0, 0, 22, 0, 0, 0, 10, 18], [0, 0, 2, 8, 0, 14, 25, 19], [22, 2, 0, 14, 0, 29, 9, 0], [0, 8, 14, 0, 6, 9, 10, 10], [0, 0, 0, 6, 0, 5, 7, 0], [0, 14, 29, 9, 5, 0, 2, 23], [10, 25, 9, 10, 7, 2, 0, 8], [18, 19, 0, 10, 0, 23, 8, 0]]
